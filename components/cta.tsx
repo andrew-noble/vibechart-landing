@@ -3,49 +3,59 @@ import Stripes from "@/public/images/stripes-dark.svg";
 
 export default function Cta() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div
-          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
-          data-aos="zoom-y-out"
-        >
-          {/* Glow */}
-          <div
-            className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
-            aria-hidden="true"
-          >
-            <div className="h-56 w-[480px] rounded-full border-[20px] border-blue-500 blur-3xl" />
-          </div>
-          {/* Stripes illustration */}
-          <div
-            className="pointer-events-none absolute top-0 left-1/2 -z-10 -translate-x-1/2 transform"
-            aria-hidden="true"
-          >
-            <Image
-              className="max-w-none"
-              src={Stripes}
-              width={768}
-              height={432}
-              alt="Stripes"
-            />
-          </div>
-          <div className="px-4 py-12 md:px-12 md:py-20">
-            <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+    <section id="cta" className="bg-slate-800 py-12 md:py-20">
+      <div className="mx-auto max-w-4xl px-6 sm:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+          {/* Left column - Blurb */}
+          <div>
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+              Get early access to VibeChart
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
-                className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+            <p className="text-lg text-slate-300">
+              I am trying to gauge interest in the tool, if this would be
+              helpful for your workflow, please join the waitlist!{" "}
+            </p>
+          </div>
+
+          {/* Right column - Email form */}
+          <div>
+            <form
+              action="https://formsubmit.co/aknoble.andrew@gmail.com"
+              method="POST"
+              className="flex flex-col gap-4"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                className="btn bg-blue-500 px-6 py-3 text-white shadow-sm hover:bg-blue-600"
               >
-                <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
-                </span>
-              </a>
-            </div>
+                Join Waitlist
+              </button>
+
+              {/* FormSubmit hidden fields */}
+              <input
+                type="hidden"
+                name="_subject"
+                value="New VibeChart Waitlist Subscriber"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thanks for joining the VibeChart waitlist! We'll keep you posted. In the meantime, if you have any thoughts or specific use cases, don't hesistate to reach out! "
+              />
+            </form>
+
+            <p className="mt-3 text-sm text-slate-400">
+              No spam. Unsubscribe at any time.
+            </p>
           </div>
         </div>
       </div>
