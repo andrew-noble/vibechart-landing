@@ -30,7 +30,7 @@ export default function FeaturesPlanet() {
                 />
                 <div className="pointer-events-none" aria-hidden="true">
                   <Image
-                    className="absolute -right-64 -top-20 z-10 max-w-none"
+                    className="absolute -top-20 -right-64 z-10 max-w-none"
                     src={PlanetOverlayImg}
                     width={789}
                     height={755}
@@ -38,21 +38,21 @@ export default function FeaturesPlanet() {
                   />
                   <div>
                     <Image
-                      className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
+                      className="absolute top-16 -left-28 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
                       src={PlanetTagImg01}
                       width={253}
                       height={56}
                       alt="Tag 01"
                     />
                     <Image
-                      className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
+                      className="absolute top-7 left-56 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
                       src={PlanetTagImg02}
                       width={241}
                       height={56}
                       alt="Tag 02"
                     />
                     <Image
-                      className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
+                      className="absolute bottom-24 -left-20 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
                       src={PlanetTagImg03}
                       width={243}
                       height={56}
@@ -71,7 +71,7 @@ export default function FeaturesPlanet() {
             </div>
           </div>
           {/* Grid */}
-          <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 *:relative *:p-6 *:before:absolute *:before:bg-gray-800 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:before:[inset-inline-start:-1px] *:after:absolute *:after:bg-gray-800 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] *:after:[inset-inline-start:0] md:*:p-10">
+          <div className="grid overflow-hidden *:relative *:p-6 *:before:absolute *:before:[inset-inline-start:-1px] *:before:bg-gray-800 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:after:absolute *:after:[inset-inline-start:0] *:after:bg-gray-800 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] sm:grid-cols-2 md:*:p-10 lg:grid-cols-3">
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg

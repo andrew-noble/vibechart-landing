@@ -9,7 +9,7 @@ export default function LargeTestimonial() {
           <div className="space-y-3 text-center">
             <div className="relative inline-flex">
               <svg
-                className="absolute -left-6 -top-2 -z-10"
+                className="absolute -top-2 -left-6 -z-10"
                 width={40}
                 height={49}
                 viewBox="0 0 40 49"
@@ -32,7 +32,7 @@ export default function LargeTestimonial() {
             <p className="text-2xl font-bold text-gray-900">
               “Simple has simplified my life in more ways than one. From
               managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
+              <em className="text-gray-500 italic">keeping track of tasks</em>,
               it's become my go-to tool for everything.”
             </p>
             <div className="text-sm font-medium text-gray-500">
