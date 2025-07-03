@@ -23,7 +23,8 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Design data visualizations using AI.
+                Turn plain data into beautiful charts — just by describing what
+                you want.
               </p>
               <p className="mb-8 text-lg text-gray-700">
                 Prompt + CSV <span className="items-center text-2xl">→</span>{" "}

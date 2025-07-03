@@ -12,8 +12,15 @@ export default function Cta() {
               Get early access to VibeChart
             </h2>
             <p className="text-lg text-slate-300">
-              I am trying to gauge interest in the tool, if this would be
-              helpful for your workflow, please join the waitlist!{" "}
+              I haven't built this yet, but I've built ones very technically
+              similar.
+              <br />
+              <br />
+              <p className="text-lg text-slate-300">
+                I am trying to gauge interest in the tool, if this would be
+                helpful for your workflow, please join the waitlist or email me
+                directly with thoughts!{" "}
+              </p>
             </p>
           </div>
 
